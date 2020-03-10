@@ -10,12 +10,12 @@ public class Text_Script : MonoBehaviour
     public GameObject playerAmmo;
     public static int ammo = 50;
     //public static int score = 100;
-      //set the score to 100
+    //set the score to 100
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,14 +28,21 @@ public class Text_Script : MonoBehaviour
             ammo--;
         }
 
-    
+
 
         if (ammo == 0)
         {
             ammo = 50;
         }
 
-        //
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = 50;
+        }
+
+
+
+
 
 
     }
